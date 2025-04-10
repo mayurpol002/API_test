@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="web-service-tests - All Test Cases" time="6.544" tests="2" failures="0" errors="0">
+   <testsuite name="web-service-tests - All Test Cases" tests="2" failures="0" errors="0" time="6.544" skipped="0" timestamp="10-04-2025T22:36:19" hostname="UNIFY - DESKTOP-5288VQM" id="Test Suites/web-service-tests - All Test Cases">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\UNIFY\\Katalon Studio\\API_Learning\\Reports\\20250410_223610\\web-service-tests - All Test Cases\\20250410_223611"/>
+         <property name="logFiles" value="C:\\Users\\UNIFY\\Katalon Studio\\API_Learning\\Reports\\20250410_223610\\web-service-tests - All Test Cases\\20250410_223611\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="UNIFY - DESKTOP-5288VQM"/>
+         <property name="hostAddress" value="192.168.0.105"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="10.1.0.223"/>
+      </properties>
+      <testcase name="Test Cases/Create a new user" time="4.433" classname="Test Cases/Create a new user" status="PASSED">
+         <properties>
+            <property name="data_binding"><![CDATA[{"(Default) usern...":"mimi","(Default) passw...":"123456789","(Default) gende...":"MALE","(Default) age":"25","(Default) avata...":"https://www.rd.com/wp-content/uploads/2019/06/lily-of-the-valley-760x506.jpg"}]]></property>
+         </properties>
+         <system-out><![CDATA[10-04-2025T22:36:20 - [TEST_CASE][PASSED] - Test Cases/Create a new user: Test Cases/Create a new user
+
+10-04-2025T22:36:20 - [TEST_STEP][PASSED] - sample.Common.createNewUser(age, username, password, gender, 200): sample.Common.createNewUser is PASSED
+
+10-04-2025T22:36:23 - [MESSAGE][INFO] - HAR: C:\Users\UNIFY\Katalon Studio\API_Learning\Reports\20250410_223610\web-service-tests - All Test Cases\20250410_223611\requests\main\POST-a-new-user_0.har
+
+10-04-2025T22:36:23 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+10-04-2025T22:36:24 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+10-04-2025T22:36:24 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+10-04-2025T22:36:24 - [TEST_STEP][PASSED] - assert response.getStatusCode() == 200: null
+
+10-04-2025T22:36:24 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "age", 25): Verify element property value successfully
+
+10-04-2025T22:36:24 - [MESSAGE][PASSED] - Verify element property value successfully
+
+10-04-2025T22:36:24 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "username", "mimi"): Verify element property value successfully
+
+10-04-2025T22:36:24 - [MESSAGE][PASSED] - Verify element property value successfully
+
+10-04-2025T22:36:24 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "password", "123456789"): Verify element property value successfully
+
+10-04-2025T22:36:24 - [MESSAGE][PASSED] - Verify element property value successfully
+
+10-04-2025T22:36:24 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "gender", "MALE"): Verify element property value successfully
+
+10-04-2025T22:36:24 - [MESSAGE][PASSED] - Verify element property value successfully
+
+10-04-2025T22:36:24 - [MESSAGE][PASSED] - Verify response successfully
+
+10-04-2025T22:36:24 - [MESSAGE][PASSED] - All validation steps have been passed
+
+10-04-2025T22:36:24 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+10-04-2025T22:36:24 - [MESSAGE][PASSED] - sample.Common.createNewUser is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Find user by ID" time="1.718" classname="Test Cases/Find user by ID" status="PASSED">
+         <properties>
+            <property name="data_binding"><![CDATA[{"(Default) usern...":"mimi","(Default) id":"0","(Default) passw...":"123456789","(Default) gende...":"MALE","(Default) age":"25"}]]></property>
+         </properties>
+         <system-out><![CDATA[10-04-2025T22:36:24 - [TEST_CASE][PASSED] - Test Cases/Find user by ID: Test Cases/Find user by ID
+
+10-04-2025T22:36:25 - [TEST_STEP][PASSED] - id = sample.Common.createNewUser(age, username, password, gender, 200): sample.Common.createNewUser is PASSED
+
+10-04-2025T22:36:25 - [MESSAGE][INFO] - HAR: C:\Users\UNIFY\Katalon Studio\API_Learning\Reports\20250410_223610\web-service-tests - All Test Cases\20250410_223611\requests\main\POST-a-new-user_1.har
+
+10-04-2025T22:36:25 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+10-04-2025T22:36:25 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+10-04-2025T22:36:25 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+10-04-2025T22:36:25 - [TEST_STEP][PASSED] - assert response.getStatusCode() == 200: null
+
+10-04-2025T22:36:25 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "age", 25): Verify element property value successfully
+
+10-04-2025T22:36:25 - [MESSAGE][PASSED] - Verify element property value successfully
+
+10-04-2025T22:36:25 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "username", "mimi"): Verify element property value successfully
+
+10-04-2025T22:36:25 - [MESSAGE][PASSED] - Verify element property value successfully
+
+10-04-2025T22:36:25 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "password", "123456789"): Verify element property value successfully
+
+10-04-2025T22:36:25 - [MESSAGE][PASSED] - Verify element property value successfully
+
+10-04-2025T22:36:25 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "gender", "MALE"): Verify element property value successfully
+
+10-04-2025T22:36:25 - [MESSAGE][PASSED] - Verify element property value successfully
+
+10-04-2025T22:36:25 - [MESSAGE][PASSED] - Verify response successfully
+
+10-04-2025T22:36:25 - [MESSAGE][PASSED] - All validation steps have been passed
+
+10-04-2025T22:36:25 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+10-04-2025T22:36:25 - [MESSAGE][PASSED] - sample.Common.createNewUser is PASSED
+
+10-04-2025T22:36:25 - [TEST_STEP][PASSED] - sample.Common.findUserById(id, age, username, password, gender, 200): sample.Common.findUserById is PASSED
+
+10-04-2025T22:36:26 - [MESSAGE][INFO] - HAR: C:\Users\UNIFY\Katalon Studio\API_Learning\Reports\20250410_223610\web-service-tests - All Test Cases\20250410_223611\requests\main\GET-user-by-id_2.har
+
+10-04-2025T22:36:26 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+10-04-2025T22:36:26 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+10-04-2025T22:36:26 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+10-04-2025T22:36:26 - [TEST_STEP][PASSED] - assert response.getStatusCode() == 200: null
+
+10-04-2025T22:36:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "age", 25): Verify element property value successfully
+
+10-04-2025T22:36:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+10-04-2025T22:36:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "username", "mimi"): Verify element property value successfully
+
+10-04-2025T22:36:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+10-04-2025T22:36:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "password", "123456789"): Verify element property value successfully
+
+10-04-2025T22:36:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+10-04-2025T22:36:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "gender", "MALE"): Verify element property value successfully
+
+10-04-2025T22:36:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+10-04-2025T22:36:26 - [MESSAGE][PASSED] - Verify response successfully
+
+10-04-2025T22:36:26 - [MESSAGE][PASSED] - All validation steps have been passed
+
+10-04-2025T22:36:26 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+10-04-2025T22:36:26 - [MESSAGE][PASSED] - sample.Common.findUserById is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[10-04-2025T22:36:19 - [TEST_SUITE][PASSED] - web-service-tests - All Test Cases: Test Cases/Find user by ID]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
