@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+web-service-tests - All Test Cases,,,,10-04-2025 22:36:19,10-04-2025 22:36:26,6.544s,PASSED
+,,,,,,,
+Test Cases/Create a new user,,,,10-04-2025 22:36:20,10-04-2025 22:36:24,4.433s,PASSED
+"DATA BINDING - {""(Default) usern..."":""mimi"",""(Default) passw..."":""123456789"",""(Default) gende..."":""MALE"",""(Default) age"":""25"",""(Default) avata..."":""https://www.rd.com/wp-content/uploads/2019/06/lily-of-the-valley-760x506.jpg""}",,,,,,,
+"sample.Common.createNewUser(age, username, password, gender, 200)",,,,10-04-2025 22:36:20,10-04-2025 22:36:24,4.095s,PASSED
+,,,,,,,
+Test Cases/Find user by ID,,,,10-04-2025 22:36:24,10-04-2025 22:36:26,1.718s,PASSED
+"DATA BINDING - {""(Default) usern..."":""mimi"",""(Default) id"":""0"",""(Default) passw..."":""123456789"",""(Default) gende..."":""MALE"",""(Default) age"":""25""}",,,,,,,
+"id = sample.Common.createNewUser(age, username, password, gender, 200)",,,,10-04-2025 22:36:25,10-04-2025 22:36:25,0.588s,PASSED
+"sample.Common.findUserById(id, age, username, password, gender, 200)",,,,10-04-2025 22:36:25,10-04-2025 22:36:26,0.635s,PASSED
